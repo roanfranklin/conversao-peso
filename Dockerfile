@@ -11,5 +11,5 @@ RUN dotnet publish -c release -o /app/out --no-restore
 FROM mcr.microsoft.com/dotnet/aspnet:5.0
 WORKDIR /app
 COPY --from=build /app/out .
-EXPOSE 8080
+EXPOSE 80
 ENTRYPOINT ["dotnet", "ConversaoPeso.Web.dll"]
