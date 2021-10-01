@@ -1,0 +1,10 @@
+# apiVersion: v1
+# kind: Pod
+# metadata:
+#   name: conversaopeso
+# spec:
+#   containers:
+#     - name: conversaopeso
+#       image: roanfranklin/conversaopeso:v1
+#       ports:
+#         - containerPort: 80

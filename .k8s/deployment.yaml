@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: conversaopeso
+spec:
+  replicas: 5
+  selector:
+    matchLabels:
+      app: conversaopeso
+  template:
+    metadata:
+      labels:
+        app: conversaopeso
+    spec:
+      containers:
+        - name: conversaopeso
+          image: roanfranklin/conversaopeso:v1
+          ports:
+            - containerPort: 80
